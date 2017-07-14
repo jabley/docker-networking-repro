@@ -23,3 +23,10 @@ exit status 1
 FAIL	_/opt/hello-go	0.005s
 The command '/bin/sh -c go test -v ./...' returned a non-zero code: 1
 ```
+
+But running outside of Docker seems to work fine:
+
+```sh
+$ go test ./...
+ok  	_/Users/jabley/Projects/jabley/docker-networking-repro	0.010s
+```
